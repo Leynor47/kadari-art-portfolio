@@ -1,0 +1,22 @@
+# Dependencies and generated site
+node_modules/
+_site/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Eleventy caches
+.cache/
+.eleventy-cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db

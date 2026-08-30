@@ -1,0 +1,45 @@
+:root {
+  --page-background: #f4f4f4;
+  --text-color: #1d1d1d;
+  --content-width: 48rem;
+  --page-spacing: clamp(1.5rem, 5vw, 4rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--page-background);
+  color: var(--text-color);
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  padding: var(--page-spacing);
+  place-items: center;
+}
+
+.technical-status {
+  width: min(100%, var(--content-width));
+}
+
+.technical-status h1 {
+  margin-bottom: 0.5rem;
+}
